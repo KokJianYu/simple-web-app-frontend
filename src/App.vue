@@ -1,26 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <FlashCards/>
+    <p class="title">Spanish to English flashcards</p>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <FlashCards />
   </div>
 </template>
 
 <script>
-import FlashCards from './components/FlashCards.vue'
-import Vue from 'vue'
-import { BootstrapVue } from 'bootstrap-vue'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap-vue/dist/bootstrap-vue.css"
+import FlashCards from "./components/FlashCards.vue";
+import Vue from "vue";
+import { BootstrapVue } from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
 Vue.use(BootstrapVue);
 
-
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    FlashCards
+    FlashCards,
   },
-}
+};
 </script>
 
 <style>
@@ -31,5 +31,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.title {
+  font-size: large;
+  font-weight: bold;
 }
 </style>
