@@ -116,6 +116,9 @@ export default {
       } else {
         this.flashCards.splice(currentIndex, 1);
         this.numberFlashCards -= 1;
+        if (this.counter == this.numberFlashCards) {
+          this.counter = this.counter - 1;
+        }
         this.currentCard = this.flashCards[this.counter];
         this.counter = this.counter % this.flashCards.length;
         this.spanishWord = this.currentCard[1];
