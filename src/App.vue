@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <p class="title">Spanish to English flashcards</p>
-    <img alt="Vue logo" src="./assets/logo.png" />
     <FlashCards />
   </div>
 </template>

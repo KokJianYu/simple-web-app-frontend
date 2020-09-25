@@ -171,6 +171,9 @@ export default {
     },
     previousCard: function() {
       this.counter = (this.counter - 1) % this.flashCards.length;
+      if (this.counter < 0) {
+        this.counter = this.flashCards.length - 1;
+      }
       this.currentCard = this.flashCards[this.counter];
       this.spanishWord = this.currentCard[1];
       this.englishWord = this.currentCard[2];
